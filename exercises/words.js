@@ -5,6 +5,10 @@
  * and return an array of each words using space as a delimiter
  *
  */
+function words(str){
+  return str.split(" ")
+}
+
 
 
 //* Begin of tests

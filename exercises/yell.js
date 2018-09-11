@@ -6,9 +6,14 @@
  *
  */
 
+function yell(str){
+  return str.toUpperCase()
+}
+
+
 
 //* Begin of tests
 const assert = require('assert')
-
-assert.fail('You must write your own tests')
+assert.deepStrictEqual(yell('bonjour monsieur'), 'BONJOUR MONSIEUR')
+assert.deepStrictEqual(yell('laST'), 'LAST')
 // End of tests */

@@ -9,14 +9,15 @@
 
  function capitalize(str){
 
-    var result = "";
-    result += str[0].toUpperCase();
-    var i = 0;
-    for (i = 1; i < str.length ;i++){
-      result += str[i].toLowerCase();
-    }
-    return result
-  }
+   var result = "";
+   result += str[0].toUpperCase();
+   var i = 0;
+   for (i = 1; i < str.length ;i++){
+     result += str[i].toLowerCase();
+   }
+   return result
+ }
+
 
 //* Begin of tests
 const assert = require('assert')

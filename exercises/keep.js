@@ -11,10 +11,28 @@
  * and only keep 2 characters from the third character
  *
  */
+function keepFirst(str){
+
+  return str.slice(0, 2)
+};
+
+function keepLast(str){
+  return str.slice(str.length - 2)
+};
+
+function keepFirstLast(str){
+  let i = 2
+  var result = ""
+  result = str[3] + str[4]
+  return result
+};
 
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(keepFirst('salut'), 'sa')
+assert.strictEqual(keepLast('salut'), 'ut')
+assert.strictEqual(keepFirstLast('salutations'), 'ut')
+
 // End of tests */
