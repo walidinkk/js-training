@@ -15,7 +15,7 @@ function abs(num){
     return num
   }
   else{
-    return num * -1
+    return -num
   }
 }
 //* Begin of tests
